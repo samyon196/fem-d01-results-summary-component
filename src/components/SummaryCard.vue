@@ -6,7 +6,7 @@ fetch('/data.json').then((response) => response.json()).then((data) => results.v
 
 <template>
 <div class="p-10 flex flex-col justify-between ">
-    <span class="font-bold text-3xl">Summary</span>
+    <span class="font-bold text-3xl text-gray-700">Summary</span>
     <div v-for="result in results" :key="result.icon" :class="['bg-'+result.color+'-50']" class="p-3 rounded-xl flex flex-row  justify-between">
         <span class="text-lg ">
             <img class="inline" :src="'.'+result.icon" />
