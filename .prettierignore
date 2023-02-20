@@ -1,0 +1,5 @@
+.vscode/
+starter/
+dist/
+node_modules/
+public/
