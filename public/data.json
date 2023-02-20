@@ -2,21 +2,25 @@
     {
       "category": "Reaction",
       "score": 80,
+      "color": "text-red-300",
       "icon": "./assets/images/icon-reaction.svg"
     },
     {
       "category": "Memory",
       "score": 92,
+      "color": "text-yellow-300",
       "icon": "./assets/images/icon-memory.svg"
     },
     {
       "category": "Verbal",
       "score": 61,
+      "color": "text-green-300",
       "icon": "./assets/images/icon-verbal.svg"
     },
     {
       "category": "Visual",
       "score": 72,
+      "color": "text-blue-300",
       "icon": "./assets/images/icon-visual.svg"
     }
   ]
