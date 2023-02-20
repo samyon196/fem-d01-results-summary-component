@@ -6,6 +6,7 @@ fetch('/data.json').then((response) => response.json()).then((data) => results.v
 
 <template>
 {{ results   }}
+<img src="./assets/images/icon-memory.svg" />
 </template>
 
 <style scoped>
