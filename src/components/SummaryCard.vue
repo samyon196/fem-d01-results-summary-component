@@ -5,12 +5,12 @@ fetch('/data.json').then((response) => response.json()).then((data) => results.v
 </script>
 
 <template>
-<div class="p-14 flex flex-col justify-between ">
+<div class="p-10 flex flex-col justify-between ">
     <span class="font-bold text-3xl">Summary</span>
-    <div v-for="result in results" :key="result.icon" class="flex flex-row  justify-between">
-        <span class="text-lg">
+    <div v-for="result in results" :key="result.icon" :class="['bg-'+result.color+'-50']" class="p-3 rounded-xl flex flex-row  justify-between">
+        <span class="text-lg ">
             <img class="inline" :src="'.'+result.icon" />
-            <span >&nbsp;&nbsp;{{ result.category }}</span>
+            <span :class="['text-'+result.color+'-500']" class="font-semibold">&nbsp;&nbsp;{{ result.category }}</span>
         </span>
         <span class="font-bold">{{ result.score }}<span class="font-bold text-gray-400"> / 100</span></span>
     </div>
